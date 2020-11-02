@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <title>Web workers - Web Mentor</title>
+  <link href="app.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Main thread task application<h1>
+  </header>
+  <main>
+    <h2>Data control</h2>
+    <p>Populate the data and run the application. When querying for the data a progress bar is rendered. As long as it animates, the main thread is safe.</p>
+
+    <div class="app-actions">
+      <button id="populate">Populate the data store (4096 items)</button>
+      <button id="clear">Clear the data store</button>
+      <button id="count">Count data</button>
+      <button id="run">Get all data</button>
+    </div>
+
+    <div class="progress">
+      <progress hidden></progress>
+    </div>
+
+    <output id="out"></output>
+  </main>
+
+  <footer>
+    Created by Pawel Psztyc. Copyrights (c) 2020 Pawel Psztyc.
+  </footer>
+
+  <script type="module" src="./main-thread.js" async></script>
+</body>
+</html>
